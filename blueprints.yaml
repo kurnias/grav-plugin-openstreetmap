@@ -1,0 +1,21 @@
+name: OpenStreetMap
+version: 0.1.0
+description: A Grav plugin to embed OpenStreetMap maps
+icon: map
+author:
+  name: Oleg
+  email: oleg@dark.web.id
+  url: https://dark.web.id
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
