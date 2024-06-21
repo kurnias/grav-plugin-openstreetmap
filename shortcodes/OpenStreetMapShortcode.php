@@ -12,8 +12,8 @@ class OpenStreetMapShortcode extends Shortcode
             $lat = $sc->getParameter('lat', $sc->getBbCode());
             $lng = $sc->getParameter('lng', $sc->getBbCode());
             $zoom = $sc->getParameter('zoom', $sc->getBbCode());
-            $markerLat = $sc->getParameter('marker-lat', $sc->getBbCode());
-            $markerLng = $sc->getParameter('marker-lng', $sc->getBbCode());
+	    $markerLat = $sc->getParameter('marker-lat', $lat);
+	    $markerLng = $sc->getParameter('marker-lng', $lng);
             $markerPopup = $sc->getParameter('marker-popup', $sc->getBbCode());
 
             return $this->twig->processTemplate('partials/openstreetmap.html.twig', [
