@@ -3,9 +3,9 @@ version: 0.1.0
 description: A Grav plugin to embed OpenStreetMap maps
 icon: map
 author:
-  name: Oleg
-  email: oleg@dark.web.id
-  url: https://dark.web.id
+  name: sindhu
+  email: sindhu@duck.com
+  url: https://blog.sind.hu
 form:
   validation: strict
   fields:
